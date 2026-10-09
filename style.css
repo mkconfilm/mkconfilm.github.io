@@ -1048,3 +1048,32 @@ h1, h2 {
     transition: none;
   }
 }
+/* SMALLER, DENSER PORTFOLIO COLLAGE */
+
+.photo-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-rows: clamp(90px, 9vw, 130px);
+  gap: 8px;
+}
+
+.photo-tile {
+  border-radius: 5px;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: clamp(85px, 13vw, 115px);
+    gap: 7px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: clamp(70px, 20vw, 100px);
+    gap: 5px;
+  }
+}
