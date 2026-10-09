@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta
     name="description"
-    content="Request a photography or video shoot with Kai Collazo
-    at mkconfilm. Share your idea, preferred date, and location."
+    content="Plan your next photography or video project with
+    Kai Collazo at mkconfilm."
   >
 
   <meta name="theme-color" content="#101010">
 
-  <title>Book a Shoot | mkconfilm</title>
+  <title>Booking | mkconfilm</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,7 +20,6 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- SITE HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="mkconfilm home">
       mkconfilm<span class="brand-dot">.</span>
@@ -40,150 +38,162 @@
     </nav>
   </header>
 
-  <main class="booking-page" id="main">
-    <p class="eyebrow">Photography &amp; video / mkconfilm</p>
+  <main class="booking-page booking-page-refined" id="main">
 
-    <h1>
-      Your idea.<br>
-      <span class="accent">Let’s bring it to life.</span>
-    </h1>
+    <header class="booking-heading">
+      <p class="eyebrow">Work with mkconfilm</p>
 
-    <p class="booking-intro">
-      Tell me what you have in mind. Share a few details below
-      so we can talk about your project, availability, and pricing.
-    </p>
+      <h1>Let’s create <span class="accent">together.</span></h1>
 
-  
-   <form
-  class="booking-form"
-  id="booking-form"
-  action="https://formspree.io/f/mbgdonra"
-  method="POST"
-  aria-describedby="booking-note"
->
+      <p class="booking-intro">
+        Have a project in mind? Share your details below,
+        and we’ll discuss the next steps.
+      </p>
+    </header>
 
-      <div class="form-row">
+    <form
+      class="booking-form booking-form-refined"
+      action="https://formspree.io/f/mbgdonra"
+      method="POST"
+      aria-describedby="booking-note"
+    >
+
+      <!-- CONTACT INFORMATION -->
+      <fieldset class="booking-group">
+        <legend>Your details</legend>
+
+        <p class="booking-group-description">
+          How can I reach you?
+        </p>
+
         <div class="form-field">
-          <label for="name">Your name *</label>
+          <label for="name">
+            Full name <span class="required-mark">*</span>
+          </label>
+
           <input
             id="name"
             name="name"
             type="text"
             autocomplete="name"
-            placeholder="First and last name"
+            placeholder="Your name"
             maxlength="100"
             required
           >
         </div>
 
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">
+              Email <span class="required-mark">*</span>
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              maxlength="254"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="phone">
+              Phone <span class="optional-label">(optional)</span>
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              placeholder="Your phone number"
+              maxlength="40"
+            >
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- DATE AND LOCATION -->
+      <fieldset class="booking-group">
+        <legend>The details</legend>
+
+        <p class="booking-group-description">
+          Tell me where and when. It’s okay if you’re still figuring it out.
+        </p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="preferred-date">
+              Preferred date
+              <span class="optional-label">(optional)</span>
+            </label>
+
+            <input
+              id="preferred-date"
+              name="preferred_date"
+              type="date"
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="location">
+              Location
+              <span class="optional-label">(optional)</span>
+            </label>
+
+            <input
+              id="location"
+              name="location"
+              type="text"
+              placeholder="City, venue, or still deciding"
+              maxlength="200"
+            >
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- OPEN-ENDED PROJECT DESCRIPTION -->
+      <fieldset class="booking-group">
+        <legend>What are we creating?</legend>
+
+        <p class="booking-group-description" id="project-help">
+          Photography, video, or something different—tell me your idea
+          in your own words.
+        </p>
+
         <div class="form-field">
-          <label for="email">Email address *</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            placeholder="you@example.com"
-            maxlength="254"
+          <label class="project-label" for="details">
+            Your project <span class="required-mark">*</span>
+          </label>
+
+          <textarea
+            id="details"
+            name="project_details"
+            placeholder="Tell me what you have in mind..."
+            aria-describedby="project-help"
             required
-          >
+          ></textarea>
         </div>
+      </fieldset>
+
+      <!-- SUBMIT -->
+      <div class="booking-submit">
+        <p class="form-note" id="booking-note">
+          This is an inquiry, not a confirmed booking.
+          Availability and pricing will be discussed directly.
+        </p>
+
+        <button class="button button-primary" type="submit">
+          Send inquiry <span aria-hidden="true">↗</span>
+        </button>
+
+        <p class="booking-required-note">
+          <span class="required-mark">*</span> Required fields
+        </p>
       </div>
-
-      <div class="form-row">
-        <div class="form-field">
-          <label for="phone">Phone number — optional</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            autocomplete="tel"
-            placeholder="Your phone number"
-            maxlength="40"
-          >
-        </div>
-
-        <div class="form-field">
-          <label for="project-type">What are we creating? *</label>
-          <select id="project-type" name="project_type" required>
-            <option value="" disabled selected>
-              Choose a project type
-            </option>
-            <option value="Photography">Photography</option>
-            <option value="Video">Video</option>
-            <option value="Photography and video">
-              Photography + video
-            </option>
-            <option value="Other or not sure">
-              Something else / not sure yet
-            </option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-field">
-          <label for="preferred-date">Preferred date — optional</label>
-          <input
-            id="preferred-date"
-            name="preferred_date"
-            type="date"
-          >
-        </div>
-
-        <div class="form-field">
-          <label for="location">City or shoot location *</label>
-          <input
-            id="location"
-            name="location"
-            type="text"
-            placeholder="City, venue, or location idea"
-            maxlength="200"
-            required
-          >
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label for="budget">Estimated budget — optional</label>
-        <input
-          id="budget"
-          name="budget"
-          type="text"
-          placeholder="Your budget range, or “not sure yet”"
-          maxlength="100"
-        >
-      </div>
-
-      <div class="form-field">
-        <label for="details">Tell me about your idea *</label>
-        <textarea
-          id="details"
-          name="project_details"
-          placeholder="What do you want to capture? Share the style,
-mood, intended use, and any other details you have in mind."
-          maxlength="5000"
-          required
-        ></textarea>
-      </div>
-
-      <p class="form-note">
-        * Required fields. If your date is flexible,
-        mention that in your project details.
-      </p>
-
-      <p class="form-note" id="booking-note">
-        This is a booking request, not a confirmed reservation.
-        Your date and pricing will be confirmed directly with Kai.
-        Please don’t include payment information or sensitive documents.
-      </p>
-
-      <button
-  class="button button-primary"
-  type="submit"
->
-  Send booking request
-</button>
 
     </form>
   </main>
@@ -195,7 +205,7 @@ mood, intended use, and any other details you have in mind."
 
     <p>Photography &amp; Video by Kai Collazo</p>
 
-    <a href="#main">Back to top ↑</a>
+    <a href="index.html">Back to portfolio ↗</a>
   </footer>
 </body>
 </html>
