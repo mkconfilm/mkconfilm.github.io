@@ -1553,3 +1553,9 @@ main.booking-page.booking-page-refined {
 .button .arrow-icon {
   margin-left: 10px;
 }
+/* KEEP FOOTER TEXT AND SVG ARROWS ALIGNED */
+.site-footer > a:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
