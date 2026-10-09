@@ -1416,3 +1416,28 @@ h1, h2 {
     min-width: 0;
   }
 }
+/* PHONE-ONLY DATE FIELD FIX */
+@media (max-width: 600px) {
+  .booking-page input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 50px;
+    padding: 12px;
+    overflow: hidden;
+  }
+
+  .booking-page input[type="date"]::-webkit-date-and-time-value {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .booking-page input[type="date"]::-webkit-datetime-edit {
+    min-width: 0;
+    padding: 0;
+  }
+}
