@@ -53,18 +53,14 @@
       so we can talk about your project, availability, and pricing.
     </p>
 
-    <!--
-      SETUP IN PROGRESS:
-      Submission is disabled until we connect the email service.
-      We will update this form tag and enable the button next.
-    -->
-    <form
-      class="booking-form"
-      id="booking-form"
-      method="POST"
-      onsubmit="return false;"
-      aria-describedby="booking-note setup-note"
-    >
+  
+   <form
+  class="booking-form"
+  id="booking-form"
+  action="https://formspree.io/f/mbgdonra"
+  method="POST"
+  aria-describedby="booking-note"
+>
 
       <div class="form-row">
         <div class="form-field">
@@ -183,17 +179,12 @@ mood, intended use, and any other details you have in mind."
       </p>
 
       <button
-        class="button button-primary"
-        type="submit"
-        disabled
-      >
-        Send booking request
-      </button>
+  class="button button-primary"
+  type="submit"
+>
+  Send booking request
+</button>
 
-      <p class="form-note" id="setup-note">
-        Email delivery is being connected. This form is not accepting
-        submissions yet.
-      </p>
     </form>
   </main>
 
