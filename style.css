@@ -1541,3 +1541,15 @@ main.booking-page.booking-page-refined {
     font-size: clamp(2rem, 8vw, 2.8rem);
   }
 }
+/* CONSISTENT ARROW ICON */
+.arrow-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.button .arrow-icon {
+  margin-left: 10px;
+}
