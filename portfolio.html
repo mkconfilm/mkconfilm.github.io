@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Explore selected photography by Kai Collazo at mkconfilm."
+  >
+
+  <meta name="theme-color" content="#101010">
+
+  <title>Portfolio | mkconfilm</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="portfolio.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="mkconfilm home">
+      mkconfilm<span class="brand-dot">.</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-booking" href="booking.html">Book a shoot</a>
+    </nav>
+  </header>
+
+  <main class="portfolio-page" id="main">
+
+    <!-- PAGE INTRODUCTION -->
+    <header class="portfolio-page-heading">
+      <p class="eyebrow">Selected work / mkconfilm</p>
+
+      <h1>
+        Through the <span class="accent">lens.</span>
+      </h1>
+
+      <p class="portfolio-page-intro">
+        A collection of moments, details, and perspectives.
+        Select a photograph to see the full frame.
+      </p>
+    </header>
+
+    <!--
+      portfolio.js will generate the gallery from a photo list.
+      New photos will be added to that list, not this HTML.
+    -->
+    <section aria-label="Photography portfolio">
+      <div class="photo-grid" id="photo-grid"></div>
+
+      <noscript>
+        <p class="form-note">
+          Enable JavaScript to view the photo gallery.
+        </p>
+      </noscript>
+    </section>
+
+    <!-- BOOKING LINK -->
+    <section
+      class="portfolio-page-cta"
+      aria-labelledby="portfolio-cta-heading"
+    >
+      <div>
+        <p class="eyebrow">Have something in mind?</p>
+        <h2 id="portfolio-cta-heading">Let’s create together.</h2>
+      </div>
+
+      <a class="button button-primary" href="booking.html">
+        Start a project
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FULL-SIZE PHOTO VIEWER -->
+  <dialog
+    class="photo-viewer"
+    id="photo-viewer"
+    aria-label="Full-size photograph"
+  >
+    <div class="photo-viewer-content">
+
+      <button
+        class="photo-viewer-close"
+        id="photo-viewer-close"
+        type="button"
+        aria-label="Close photograph"
+        autofocus
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+
+      <img id="photo-viewer-image" alt="">
+
+      <p class="photo-viewer-caption" id="photo-viewer-caption"></p>
+
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">
+      mkconfilm<span class="brand-dot">.</span>
+    </a>
+
+    <p>Photography &amp; Video by Kai Collazo</p>
+
+    <a href="#main">Back to top ↑</a>
+  </footer>
+</body>
+</html>
