@@ -1120,3 +1120,144 @@ h1, h2 {
     object-fit: contain;
   }
 }
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+.about-page {
+  width: min(1100px, 88%);
+  margin-inline: auto;
+  padding-top: 70px;
+}
+
+.about-page-heading {
+  max-width: 950px;
+  margin-bottom: 60px;
+}
+
+.about-page-heading h1 {
+  margin-bottom: 0;
+  font-size: clamp(2.7rem, 6vw, 5.5rem);
+  line-height: 1.08;
+}
+
+.about-page-story {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: 65px;
+}
+
+.about-name-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+  padding: 35px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background:
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(255, 122, 24, 0.18),
+      transparent 70%
+    ),
+    var(--surface);
+}
+
+.about-name-card h2 {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.about-role {
+  position: relative;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.about-card-brand {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  color: rgba(255, 122, 24, 0.12);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  pointer-events: none;
+}
+
+.about-page-copy p {
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.about-page-copy .about-lead {
+  color: var(--text);
+  font-size: clamp(1.3rem, 2.3vw, 1.7rem);
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+}
+
+.about-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.about-page-cta {
+  margin-top: 75px;
+  padding-block: 45px;
+  border-top: 1px solid var(--border);
+}
+
+.about-page-cta h2 {
+  max-width: 650px;
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+@media (max-width: 800px) {
+  .about-page-story {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-name-card {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-page {
+    padding-top: 45px;
+  }
+
+  .about-page-heading {
+    margin-bottom: 35px;
+  }
+
+  .about-name-card {
+    padding: 28px;
+  }
+
+  .about-page-actions {
+    flex-direction: column;
+  }
+
+  .about-page-actions .button {
+    width: 100%;
+  }
+
+  .about-page-cta {
+    margin-top: 45px;
+    padding-block: 35px;
+  }
+}
