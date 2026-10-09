@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta
     name="description"
-    content="Plan your next photography or video project with
-    Kai Collazo at mkconfilm."
+    content="Plan your next photography or video project with Kai Collazo at mkconfilm."
   >
 
   <meta name="theme-color" content="#101010">
 
   <title>Booking | mkconfilm</title>
 
-<link rel="stylesheet" href="style.css?v=svg-arrows-1">
+  <link rel="stylesheet" href="style.css?v=svg-arrows-1">
+</head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,7 +25,7 @@
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-     <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About</a>
       <a
         class="nav-booking"
@@ -39,7 +38,6 @@
   </header>
 
   <main class="booking-page booking-page-refined" id="main">
-
     <header class="booking-heading">
       <p class="eyebrow">Work with mkconfilm</p>
 
@@ -57,6 +55,23 @@
       method="POST"
       aria-describedby="booking-note"
     >
+      <input
+        type="hidden"
+        name="_subject"
+        value="New mkconfilm booking inquiry"
+      >
+
+      <input
+        type="hidden"
+        name="_next"
+        value="https://mkconfilm.github.io/thank-you.html"
+      >
+
+      <input
+        type="hidden"
+        name="_template"
+        value="table"
+      >
 
       <!-- CONTACT INFORMATION -->
       <fieldset class="booking-group">
@@ -155,7 +170,7 @@
         </div>
       </fieldset>
 
-      <!-- OPEN-ENDED PROJECT DESCRIPTION -->
+      <!-- PROJECT DESCRIPTION -->
       <fieldset class="booking-group">
         <legend>What are we creating?</legend>
 
@@ -187,27 +202,26 @@
         </p>
 
         <button class="button button-primary" type="submit">
-         Send inquiry
-<svg
-  class="arrow-icon"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  aria-hidden="true"
-  focusable="false"
->
-  <path d="M3 21 21 3M10 3h11v11"></path>
-</svg>
+          Send inquiry
+          <svg
+            class="arrow-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M3 21 21 3M10 3h11v11"></path>
+          </svg>
         </button>
 
         <p class="booking-required-note">
           <span class="required-mark">*</span> Required fields
         </p>
       </div>
-
     </form>
   </main>
 
@@ -218,22 +232,22 @@
 
     <p>Photography &amp; Video by Kai Collazo</p>
 
-  <a href="portfolio.html">
-  Back to portfolio
-  <svg
-    class="arrow-icon"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <path d="M3 21 21 3M10 3h11v11"></path>
-  </svg>
-</a>
+    <a href="portfolio.html">
+      Back to portfolio
+      <svg
+        class="arrow-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M3 21 21 3M10 3h11v11"></path>
+      </svg>
+    </a>
   </footer>
 </body>
 </html>
