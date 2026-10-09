@@ -1077,3 +1077,46 @@ h1, h2 {
     gap: 5px;
   }
 }
+/* PORTFOLIO: FIVE ACROSS ON DESKTOP, ONE ACROSS ON PHONE */
+
+#photo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  gap: 12px;
+}
+
+/* Every photo occupies exactly one grid cell. */
+#photo-grid .photo-tile {
+  grid-column: auto;
+  grid-row: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+}
+
+#photo-grid .photo-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--photo-position, center);
+}
+
+/* Phones: one full-width photo per row. */
+@media (max-width: 600px) {
+  #photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  #photo-grid .photo-tile {
+    aspect-ratio: auto;
+  }
+
+  #photo-grid .photo-tile img {
+    height: auto;
+    object-fit: contain;
+  }
+}
