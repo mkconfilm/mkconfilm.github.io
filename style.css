@@ -1363,3 +1363,56 @@ h1, h2 {
     width: 100%;
   }
 }
+/* BOOKING FORM: PHONE-ONLY WIDTH FIX */
+@media (max-width: 600px) {
+  .booking-page {
+    width: 92%;
+    max-width: 100%;
+  }
+
+  .booking-page .booking-form {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+
+  .booking-page .booking-group,
+  .booking-page .form-field,
+  .booking-page .booking-submit {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .booking-page .form-row {
+    grid-template-columns: minmax(0, 1fr);
+    min-width: 0;
+    gap: 20px;
+  }
+
+  .booking-page .form-field input,
+  .booking-page .form-field select,
+  .booking-page .form-field textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .booking-page .form-field textarea {
+    resize: vertical;
+  }
+
+  .booking-page .booking-group legend {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .booking-page .booking-submit .button {
+    width: 100%;
+    min-width: 0;
+  }
+}
