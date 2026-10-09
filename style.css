@@ -1441,3 +1441,11 @@ h1, h2 {
     padding: 0;
   }
 }
+/* NARROW AND CENTER THE PREFERRED DATE FIELD */
+.booking-page .form-field input[type="date"] {
+  width: 94%;
+  max-width: 94%;
+  min-width: 0;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
