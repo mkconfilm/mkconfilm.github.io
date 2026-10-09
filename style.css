@@ -352,3 +352,143 @@ textarea {
       transparent 65%
     ),
     linear-gradient(135deg, #24211e,
+/* REFINED BOOKING PAGE */
+.booking-page-refined {
+  max-width: 780px;
+  padding-block: 70px 40px;
+}
+
+.booking-heading {
+  margin-bottom: 40px;
+}
+
+.booking-heading h1 {
+  max-width: 700px;
+  font-size: clamp(2.7rem, 6vw, 4.6rem);
+}
+
+.booking-heading .booking-intro {
+  max-width: 520px;
+  margin-top: 22px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.booking-form-refined {
+  gap: 0;
+  padding: clamp(24px, 5vw, 48px);
+  border-radius: 12px;
+}
+
+.booking-group {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.booking-group + .booking-group {
+  margin-top: 36px;
+}
+
+.booking-group legend {
+  width: 100%;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.booking-group-description {
+  margin: 14px 0 22px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.booking-group > .form-field + .form-row {
+  margin-top: 22px;
+}
+
+.booking-form-refined .form-row {
+  gap: 22px;
+}
+
+.booking-form-refined .form-field {
+  gap: 9px;
+}
+
+.booking-form-refined .form-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.optional-label {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.required-mark {
+  color: var(--orange);
+}
+
+.booking-form-refined input,
+.booking-form-refined textarea {
+  padding: 14px 16px;
+  border-color: #45413b;
+  border-radius: 6px;
+}
+
+.booking-form-refined textarea {
+  min-height: 210px;
+  line-height: 1.7;
+}
+
+.booking-submit {
+  display: grid;
+  gap: 20px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.booking-submit .form-note {
+  max-width: 540px;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.booking-submit .button {
+  justify-self: start;
+  gap: 24px;
+  min-width: 190px;
+}
+
+.booking-required-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .booking-page-refined {
+    padding-top: 45px;
+  }
+
+  .booking-heading {
+    margin-bottom: 28px;
+  }
+
+  .booking-form-refined {
+    padding: 24px 20px;
+  }
+
+  .booking-submit .button {
+    width: 100%;
+  }
+}
